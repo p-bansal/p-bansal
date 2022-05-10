@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<!-- TODO menus -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Formula Gun</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="titleArea">
+  <a href = "https://somberpungentmicrobsd.pukhrajbansal1.repl.co/" id = "homeLink">pukhi.ca</a>
+    <img src="images/fGunLogo.png" id = "title">
+    <a href = "https://somberpungentmicrobsd.pukhrajbansal1.repl.co/" id = "hiddenLink">pukhi.ca</a>
+  </div>
+
+  <div id="gameArea">
+    <canvas id="game" width="900" height="675"></canvas>
+		 <div class="menu" id = "start">
+			<h1>Formula Gun</h1>
+       <div>
+         <button onclick = 'start()' class = "menuBtn">Start</button>
+         <button onclick = "customizationbtn()" class = "menuBtn">Customization</button>
+       </div>
+		</div> 
+    <div class = 'menu' id = "end">
+      <h2>Score: <span id = "scoreLine"></span> laps</h2>
+      <p>High Score: <span id = hiscore></span></p>
+      <p id = "unlock"></p>
+      <button onclick = 'customizationbtn()' class = 'menuBtn'>Customization</button>
+      <button onclick = 'start()' class = "menuBtn">Restart</button>
+      
+    </div>
+    <div class = "menu" id = "customization">
+        <h1 id = "customTitle">Customization</h1>
+        <div id = "optionContainer">
+        <div class = "customOption">
+          <img src = "images/starterCar.png">
+          <button class = "menuBtn" onclick = selectCar(1)>Select</button>
+        </div>
+    
+        <div class = "customOption">
+          <img src = "images/jordanCar.png">
+          <button class = "menuBtn" onclick = "selectCar(2)">Select</button>
+        </div>
+
+        <div class = "customOption">
+          <img src = "images/helloKittyCar.png">
+          <button class = "menuBtn" onclick = selectCar(3)>Select</button>
+        </div>
+
+        <div class = "customOption">
+          <img src = "images/carLarge.png">
+          <button class = "menuBtn" onclick = selectCar(4)>Select</button>
+        </div>
+      </div>
+      <button onclick = 'backbtn()' class = "menuBtn" id="back" >Back</button>
+    </div>
+	  
+		<button id="fullscreen" onclick="toggleFullscreen()">
+			<img src="images/fullscreen.svg" alt="full screen icon" width="100%">
+		</button>
+  </div>
+	
+	<div class="instructions">
+		<div class="controls">
+			<h3>Controls</h3>
+			<p>&uarr;/w - accelerate</p>
+			<p>	&darr;/s - reverse</p>
+			<p>	&larr;/&rarr; OR a/d - steer</p>
+			<p>Esc - toggle fullscreen</p>
+		</div>
+		<div class="howTo">
+			<h3>How to Play</h3>
+			<p>Avoid bullets while racing around the track</p>
+		</div>
+	</div>
+	
+  <div class = "end">
+  	<p>Created in collaboration with Finlay Soehn</br><a href = "https://soehn.ca">soehn.ca</a></br>Art by Haley Ferguson & Alexis Paulson</br>Pukhraj Bansal</br>2022</p>
+  </div>
+	
+  <script src="script.js"></script>
+</body>
+
+</html>
