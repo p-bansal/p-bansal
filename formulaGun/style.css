@@ -245,3 +245,17 @@ h2{
     color:lime;
   }
 }
+#newHiScore{
+	animation: hiScore 1s infinite;
+}
+@keyframes hiScore{
+	0%{
+		color:red;
+	}
+	50%{
+		color:darkred;
+	}
+	100%{
+		color:red;
+	}
+}
