@@ -618,6 +618,7 @@ function end() {
   }
   if (score > localStorage.getItem('highScore')) {
     localStorage.setItem("highScore", score);
+    document.getElementById('newHiScore').innerHTML = "New High Score!";
   }
   checkUnlocks();
   document.getElementById('hiscore').innerHTML = localStorage.getItem('highScore');
