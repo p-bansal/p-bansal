@@ -176,6 +176,7 @@ a{
 	padding: 25px;
 	text-align: center;
 	overflow: hidden;
+	text-shadow: 0px 0px 8px white;
   font-family: game;
 }
 
