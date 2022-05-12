@@ -197,7 +197,7 @@ a{
   transition: background-color 400ms;
   font-size:1vw;
   margin: 1vw;
-  background: rgba(255, 0, 0, 0,5);
+  background: rgba(255, 0, 0, 0.5);
   padding: 0.5vw;
 }
 
