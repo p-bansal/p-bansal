@@ -239,12 +239,15 @@ h2{
 @keyframes color-change{
   0%{
     color:lime;
+	  text-shadow: 0px 0px 8px lime;
   }
   50%{
     color:darkgreen;
+	  text-shadow: 0px 0px 0px darkgreen;
   }
   100%{
     color:lime;
+	  text-shadow: 0px 0px 8px lime;
   }
 }
 #newHiScore{
@@ -253,11 +256,14 @@ h2{
 @keyframes hiScore{
 	0%{
 		color:red;
+		text-shadow: 0px 0px 8px red;
 	}
 	50%{
 		color:darkred;
+		text-shadow: 0px 0px 0px red;
 	}
 	100%{
 		color:red;
+		text-shadow: 0px 0px 8px red;
 	}
 }
