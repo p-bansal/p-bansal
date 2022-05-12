@@ -167,7 +167,8 @@ a{
 
 
 	/* 	Normal styling */
-	background-image: url("images/menuBackground.png");
+	background-image: url("images/menuBg.png");
+	background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
