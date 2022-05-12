@@ -628,10 +628,7 @@ function end() {
 function checkUnlocks(){
   let count = Math.floor(localStorage.getItem('highScore')/5) + 1;
   let unlocks = document.getElementsByClassName("customOption");
-  if(count > unlocks.length){
-    count = unlocks.length;
-  }
-  for(let i = 0; i<count; i++){
+  for(let i = 0; (i<count && i<unlocks.length); i++){
     unlocks[i].style.display = 'flex'; 
   }
 }
