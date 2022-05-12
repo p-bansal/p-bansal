@@ -10,6 +10,7 @@ localStorage.clear();
 const initialScoreLoad = localStorage.getItem('highScore');
 const initialScore = initialScoreLoad ?? 0;
 localStorage.setItem('highScore', initialScore);
+//
 checkUnlocks();
 
 
