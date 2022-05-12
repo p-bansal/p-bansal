@@ -250,12 +250,12 @@ h2{
 }
 @keyframes hiScore{
 	0%{
-		color:red;
+		color:#fc0341;
 	}
 	50%{
 		color:darkred;
 	}
 	100%{
-		color:red;
+		color:#fc0341;
 	}
 }
