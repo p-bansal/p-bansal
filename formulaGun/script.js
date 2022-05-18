@@ -618,10 +618,12 @@ function end(){
   if(Math.floor(score/5) > Math.floor(localStorage.getItem('highScore')/5)){
     document.getElementById('unlock').innerHTML = "New Car Unlocked!";
   }
+  let newScoreField = "";
   if (score > localStorage.getItem('highScore')) {
     localStorage.setItem("highScore", score);
-    document.getElementById('newHiScore').innerHTML = "New High Score!";
+    newScoreField = "New High Score!";
   }
+  document.getElementById('newHiScore').innerHTML = newScoreField;
   checkUnlocks();
   document.getElementById('hiscore').innerHTML = localStorage.getItem('highScore');
 }
