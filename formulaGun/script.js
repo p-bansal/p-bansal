@@ -1,6 +1,7 @@
 //resizing title image
 //TODO remake barriers to make sense
 //TODO menus
+//BRO WHY IS GITHUB PAGES SUSSIN RN
 const height = document.getElementById("homeLink").clientHeight;
 document.getElementById("title").style.height = height * 1.5 + 'px';
 const canvas = document.getElementById("game");
