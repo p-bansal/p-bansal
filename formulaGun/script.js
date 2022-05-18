@@ -624,6 +624,7 @@ function end() {
     document.getElementById('newHiScore').innerHTML = "";
   checkUnlocks();
   document.getElementById('hiscore').innerHTML = localStorage.getItem('highScore');
+  }
 }
 
 function checkUnlocks(){
