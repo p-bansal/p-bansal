@@ -613,7 +613,6 @@ function checkLap() {
 
 
 function end(){
-  document.getElementById('newHiScore').innerHTML = " ";
   document.getElementById('end').style.display = 'flex';
   document.getElementById('scoreLine').innerHTML = score;
   if(Math.floor(score/5) > Math.floor(localStorage.getItem('highScore')/5)){
