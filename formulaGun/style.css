@@ -252,7 +252,6 @@ h2{
 }
 #newHiScore{
 	animation: hiScore 1s infinite;
-	display: none;
 }
 @keyframes hiScore{
 	0%{
