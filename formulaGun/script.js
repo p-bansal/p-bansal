@@ -612,22 +612,30 @@ function checkLap() {
 
 
 
-function end(){
+function end() {
+  let currentHighScore = localStorage.getItem('highScore');
   document.getElementById('end').style.display = 'flex';
   document.getElementById('scoreLine').innerHTML = score;
-  if(Math.floor(score/5) > Math.floor(localStorage.getItem('highScore')/5)){
+  hiScoreScript();
+  if(Math.floor(score/5) > Math.floor(currentHighScore)){
     document.getElementById('unlock').innerHTML = "New Car Unlocked!";
   }
-  if (score > localStorage.getItem('highScore')) {
-    localStorage.setItem("highScore", score);
-    document.getElementById('newHiScore').style.display = 'flex';
-  }else{
-    document.getElementById('newHiScore').style.display = 'none';
-  }
   checkUnlocks();
-  document.getElementById('hiscore').innerHTML = localStorage.getItem('highScore');
+  document.getElementById('hiscore').innerHTML = currentHighScore;
 }
 
+
+function hiScoreScript(){
+  if(score >= localStorage.getItem('highScore')){
+    localStorage.setItem("highScore", score);
+    document.getElementById('newHiScore').innerHTML = "New High Score!";
+    console.log("B");
+  } else{
+    document.getElementById('newHiScore').innerHTML = " ";
+    console.log("No b")
+  }
+  return true;
+}
 function checkUnlocks(){
   let count = Math.floor(localStorage.getItem('highScore')/5) + 1;
   let unlocks = document.getElementsByClassName("customOption");
