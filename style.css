@@ -17,12 +17,12 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #14194b; 
+    background: #292b44; 
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #010529; 
+    background: #000644; 
 }
 body{
   overflow-x:hidden;
