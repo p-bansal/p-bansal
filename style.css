@@ -10,6 +10,20 @@
   font-family:marker;
   src:url("fonts/PermanentMarker-Regular.ttf");
 }
+ /* Scrollbar */
+ ::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #14194b; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #010529; 
+}
 body{
   overflow-x:hidden;
   background-color:#010529;
