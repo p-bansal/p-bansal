@@ -17,12 +17,12 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #292b44; 
+    background: #000644;  
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #000644; 
+    background: #292b44;
 }
 body{
   overflow-x:hidden;
@@ -42,7 +42,7 @@ a{
   text-align:center;
   width:99%;
   height:80vh;
-  padding-top: 30vh;
+  padding-top: 20vh;
   padding-bottom:0vh;
   margin-bottom:0px;
 }
