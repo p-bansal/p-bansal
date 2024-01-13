@@ -1,0 +1,247 @@
+@font-face{
+  font-family:fira;
+  src:url("fonts/FiraCode-VariableFont_wght.ttf")
+}
+@font-face{
+  font-family:barcode;
+  src:url("fonts/LibreBarcode128Text-Regular.ttf")
+}
+@font-face{
+  font-family:marker;
+  src:url("fonts/PermanentMarker-Regular.ttf");
+}
+ /* Scrollbar */
+ ::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000644;  
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #292b44;
+}
+body{
+  overflow-x:hidden;
+  background-color:#010529;
+  margin: 0px;
+  padding: 0px;
+}
+button{
+  cursor:pointer;
+}
+a{
+  cursor:pointer;
+}
+.header{
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  width:99%;
+  height:80vh;
+  padding-top: 20vh;
+  padding-bottom:0vh;
+  margin-bottom:0px;
+}
+#pukhi{
+  font-family:fira, monospace;
+  font-size:10vw;
+  color:white;
+  transition: opacity 200ms;
+  text-shadow: 0px 0px 8px white;
+  border: 0.2vw solid white;
+  padding:10px;
+}
+#link:link{
+  text-decoration:none;
+}
+#link:visited{
+  text-decoration:none;
+}
+#link:hover{
+  text-decoration:none;
+}
+#link:active{
+  text-decoration:none;
+}
+#pukhi:hover{
+  opacity:0.7;
+}
+#description{
+  font-family:fira, monospace;
+  font-size:2.5vw;
+  font-weight:lighter;
+  color:#055885;
+  text-decoration: line-through;
+  text-decoration-color:orangered;
+  padding:0px;
+  margin:0px;
+  text-shadow: 0px 0px 8px #055885;
+}
+#inProgress{
+  font-family:marker, cursive;
+  font-size:5vw;
+  color:orangered;
+  transform:rotate(-15deg);
+  padding:0px;
+  margin:0px;
+}
+#codeDiv{
+  margin-bottom:12.5vw;
+}
+
+#code{
+  margin-left:12.5vw;
+  margin-right:12.5vw;
+  font-family: fira, monospace;
+  text-align: left;
+  color:white;
+  padding-top:0vh;
+  font-size:2.5vw;
+  float:center;
+  text-shadow: 0px 0px 8px white;
+  padding-bottom:0px;
+  margin-bottom:10px;
+}
+#functionName{
+  color: deeppink;
+  text-shadow: 0px 0px 8px deeppink;
+}
+#args{
+  color:cadetblue;
+  text-shadow: 0px 0px 8px cadetblue;
+}
+#purple{
+  color:rebeccapurple;
+  text-shadow: 0px 0px 8px rebeccapurple;
+}
+#comment{
+  color:darkslategray;
+  text-shadow: 0px 0px 8px darkslategray;
+}
+#orange{
+  color:orange;
+  text-shadow: 0px 0px 8px orange;
+}
+#buttonholder{
+  text-align:left;
+  padding-left: 12.5vw;
+}
+#button{
+  font-family:fira;
+  font-size:2.5vw;
+  background-color: white;
+  color:#010529;
+  border:none;
+  transition-duration: 0.1s;
+  border-radius:.5vw;
+  padding: 0.2vw 0.5vw 0.2vw 0.5vw;
+  box-shadow: 0px 0px 10px white;
+}
+#button:hover{
+  background-color: #00074a;
+  color:deeppink;
+  text-shadow: 0px 0px 8px deeppink;
+  box-shadow: 0px 0px 10px #00074a;
+}
+#button:active{
+  background-color:#010529;
+  color:white;
+  text-shadow:0px 0px 8px white;
+  box-shadow: 0px 0px 10px #010529;
+}
+.projects{
+  color:black;
+  opacity: 0;
+  background-color:transparent;
+  width:310px;
+  height:178px;
+  margin:50px;
+  text-align: center;
+  transition: background-color 400ms;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.animated{
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode:forwards;
+}
+@keyframes fadeIn {
+  from{
+    opacity:0;
+    transform:translateX(100%);
+  }
+  to{
+    opacity:1;
+    transform:translateX(0);
+  }
+}
+.animated:nth-child(1){
+  animation-delay:0s;
+}
+.animated:nth-child(2){
+  animation-delay:0.25s;
+}
+.animated:nth-child(3){
+  animation-delay:.5s;
+}
+.animated:nth-child(4){
+  animation-delay:0.75s;
+}
+.animated:nth-child(5){
+  animation-delay:1s;
+}
+.animated:nth-child(6){
+  animation-delay:1.25s;
+}
+
+#projectholder{
+  margin-left:12.5vw;
+  margin-right:12.5vw;
+  display:none;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  margin-bottom:12.5vw;
+  background-color: deeppink;
+  box-shadow: 0px 0px 10px deeppink;
+}
+.projectholder{
+  animation-name: projectholder;
+  animation-duration:2s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes projectholder{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+@keyframes fadeOut{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity:0;
+  }
+}
+.siteThumbnail{
+  transition: opacity 400ms;
+  border:none;
+  background-color: transparent;
+}
+.linkImg{
+  transition: opacity 400ms;
+}
+.linkImg:hover{
+  opacity: 0.7;
+}
