@@ -46,3 +46,33 @@ a{
   padding-bottom:0vh;
   margin-bottom:0px;
 }
+
+h1{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width:99%;
+    padding-top: 15vh;
+    font-family: fira;
+    font-size: 7.5vw;
+    color: whitesmoke;
+    text-shadow: 0 0 1vw whitesmoke;
+}
+
+h2{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width:99%;
+    padding-top: 10vh;
+    font-family: fira;
+    font-size: 2vw;
+    color: whitesmoke;
+    text-shadow: 0 0 1vw whitesmoke;
+}
+hr{
+    width: 75%;
+    box-shadow: 0 0 1vw whitesmoke;
+    height: 1vw;
+    background-color: whitesmoke
+}
