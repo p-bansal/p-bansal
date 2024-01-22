@@ -10,6 +10,22 @@
   font-family:marker;
   src:url("fonts/PermanentMarker-Regular.ttf");
 }
+@font-face{
+    font-family: neonderthaw;
+    src:url("fonts/Neonderthaw-Regular.ttf");
+}
+@font-face{
+    font-family: tiltneon;
+    src:url("fonts/TiltNeon-Regular-VariableFont.ttf");
+}
+@font-face{
+    font-family: warnes;
+    src:url("fonts/Warnes-Regular.ttf");
+}
+@font-face{
+    font-family: monoton;
+    src:url("fonts/Monoton-Regular.ttf");
+}
  /* Scrollbar */
  ::-webkit-scrollbar {
     width: 12px;
@@ -26,7 +42,7 @@
 }
 body{
   overflow-x:hidden;
-  background-color:#010529;
+  background-color:#0f0024;
   margin: 0px;
   padding: 0px;
 }
@@ -53,10 +69,12 @@ h1{
     text-align: center;
     width:99%;
     padding-top: 15vh;
-    font-family: fira;
-    font-size: 7.5vw;
+    font-family: monoton;
+    font-size: 9vw;
+    font-weight: 500;
     color: whitesmoke;
-    text-shadow: 0 0 1vw whitesmoke;
+    text-shadow: 0 0 3vw whitesmoke;
+    animation: flicker 3s linear infinite;
 }
 
 h2{
@@ -75,4 +93,15 @@ hr{
     box-shadow: 0 0 1vw whitesmoke;
     height: 1vw;
     background-color: whitesmoke
+}
+@keyframes flicker{
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    text-shadow: 0 0 3vw whitesmoke;
+    opacity: .99;
+		
+	}
+	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    text-shadow: none;
+	opacity: 0.4;
+	}
 }
