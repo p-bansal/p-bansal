@@ -65,16 +65,16 @@ a{
 
 h1{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
-    width:99%;
+    justify-content: center;
     padding-top: 15vh;
     font-family: monoton;
     font-size: 9vw;
     font-weight: 500;
     color: whitesmoke;
     text-shadow: 0 0 3vw whitesmoke;
-    animation: flicker 3s linear infinite;
+    text-align: center;
 }
 
 h2{
@@ -104,4 +104,10 @@ hr{
     text-shadow: none;
 	opacity: 0.4;
 	}
+}
+.slow{
+    animation: flicker 3s linear infinite;
+}
+.fast{
+    animation: flicker 1s linear infinite;
 }
