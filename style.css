@@ -284,3 +284,14 @@ h1{
     color: whitesmoke;
     font-family: tiltneon;
 }
+#copyright{
+    font-size: 3vh;
+    color: whitesmoke;
+    font-family: tiltneon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 1vw;
+    animation: titleFlicker 30s linear infinite
+}
