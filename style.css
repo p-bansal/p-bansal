@@ -280,10 +280,6 @@ a{
         text-shadow:none;
     }
 }
-h1{
-    color: whitesmoke;
-    font-family: tiltneon;
-}
 #copyright{
     font-size: 3vh;
     color: whitesmoke;
@@ -324,4 +320,27 @@ h1{
 .contactFlicker{
     color: whitesmoke;
     animation: titleFlicker 35s linear infinite;
+}
+#aboutDiv{
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+}
+#aboutHeader{
+    color:#ff3864;
+    font-family: tiltneon;
+    font-size: 25vh;
+    padding-top:1vw;
+    margin:0;
+    animation: contactFlicker 3.5s linear infinite;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+#aboutBody{
+    font-family: tiltwarp;
+    font-size: 10vh;
+    text-align: left;
 }
