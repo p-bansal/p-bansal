@@ -30,6 +30,10 @@
     font-family: playfair;
     src:url("fonts/PlayfairDisplay-VariableFont_wght.ttf")
 }
+@font-face{
+    font-family: tiltwarp;
+    src:url("fonts/TiltWarp-Regular-VariableFont.ttf")
+}
  /* Scrollbar */
  ::-webkit-scrollbar {
     width: 12px;
@@ -172,11 +176,36 @@ a{
     animation: contactFlicker 3.3s linear infinite;
 }
 #homeMain{
-    background-image: url("images/HomeWallpaper.jpg");
-    height: 50vh;
-    width: 150vh;
-    border: 0.25vw solid whitesmoke;
+    /* background-image: url("images/HomeWallpaper.jpg"); */
+    background-color: darkslategrey;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 90vw;
+    border: 0.2vw solid whitesmoke;
     border-radius: 0.25vw;
+    box-shadow: 0 0 1.5vh whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+#homeHeader{
+    font-family: tiltneon;
+    color: #ff6c11;
+    font-size: 25vh;
+    animation: homeFlicker 3.34s linear infinite;
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+    padding-left: 2vw;
+    padding-top: 1vw;
+}
+#homeBody{
+    font-family: tiltwarp;
+    color: whitesmoke;
+    font-size: 4vh;
+    padding-left: 2vw;
+    padding-bottom:2vh;
+    padding-top:0;
+    margin-top:0;
 }
 @keyframes titleFlicker {
     0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
@@ -186,16 +215,18 @@ a{
 	}
 	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
 		opacity: 0.4;
+        text-shadow:none;
     }
 }
 @keyframes homeFlicker {
     0%, 1.99%, 4%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
 	text-shadow: 0 0 5vh #ff6c11;
-    opacity: .99;
+    opacity: .99
 		
 	}
 	2%, 3.99%, 20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
 		opacity: 0.4;
+        text-shadow: none;
     }
 }
 @keyframes aboutFlicker {
@@ -206,6 +237,7 @@ a{
 	}
 	2%, 3.99%, 20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
 		opacity: 0.4;
+        text-shadow:none;
     }
 }
 @keyframes cvFlicker {
@@ -216,6 +248,7 @@ a{
 	}
 	2%, 3.99%, 20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
 		opacity: 0.4;
+        text-shadow:none;
     }
 }
 @keyframes gdFlicker {
@@ -226,6 +259,7 @@ a{
 	}
 	2%, 3.99%, 20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
 		opacity: 0.4;
+        text-shadow:none;
     }
 }
 @keyframes contactFlicker {
@@ -236,10 +270,10 @@ a{
 	}
 	2%, 3%, 20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
 		opacity: 0.4;
+        text-shadow:none;
     }
 }
 h1{
     color: whitesmoke;
     font-family: tiltneon;
-    text-shadow: 0 0 3vw whitesmoke;
 }
