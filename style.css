@@ -176,7 +176,7 @@ a{
     animation: contactFlicker 3.3s linear infinite;
 }
 #homeMain{
-    /* background-image: url("images/HomeWallpaper.jpg"); */
+    background-image: url("images/HomeWallpaper.jpg");
     background-color: darkslategrey;
     background-repeat:no-repeat;
     background-size: cover;
@@ -206,11 +206,13 @@ a{
     font-size: 4vh;
     padding-left: 2vw;
     padding-bottom:2vh;
-    padding-top:0;
+    padding-top:2vh;
     padding-right: 2vw;
-    margin-bottom: 2vh;
+    margin-bottom:0;
     align-self: flex-end;
     margin-top: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-clip:border-box
 }
 @keyframes titleFlicker {
     0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
