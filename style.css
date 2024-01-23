@@ -295,3 +295,31 @@ h1{
     padding-top: 1vw;
     animation: titleFlicker 30s linear infinite
 }
+#contactDiv{
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+#contactHeader{
+    color:#375971ff;
+    font-family: tiltneon;
+    font-size: 25vh;
+    padding-top:1vw;
+    margin:0;
+    animation: contactFlicker 3.5s linear infinite
+}
+#contactInfo{
+    font-family: tiltwarp;
+    font-size: 10vh;
+    text-align: center;
+}
+.symbolflicker{
+    animation: titleFlicker 3.675s linear infinite;
+    color: whitesmoke;
+}
+.contactFlicker{
+    color: whitesmoke;
+    animation: titleFlicker 35s linear infinite;
+}
