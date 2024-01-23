@@ -33,12 +33,12 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #000644;  
+    background: #0f0024;  
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #292b44;
+    background: #170038;
 }
 body{
   overflow-x:hidden;
@@ -52,62 +52,56 @@ button{
 a{
   cursor:pointer;
 }
-.header{
-  display:flex;
-  flex-direction:column;
-  text-align:center;
-  width:99%;
-  height:80vh;
-  padding-top: 20vh;
-  padding-bottom:0vh;
-  margin-bottom:0px;
-}
-
-h1{
-    display:flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    padding-top: 15vh;
+#toplink{
     font-family: monoton;
-    font-size: 9vw;
-    font-weight: 500;
     color: whitesmoke;
-    text-shadow: 0 0 3vw whitesmoke;
-    text-align: center;
+    font-size: 7vh;
+    font-weight: 300;
+    text-align:left;
+    margin:0;
+    padding: 1vw;
+    margin-bottom: 0;
+    animation: titleFlicker 3s linear infinite;
+    /* align-self:center; */
 }
-
-h2{
-    display:flex;
-    flex-direction: column;
-    text-align: center;
-    width:99%;
-    padding-top: 10vh;
-    font-family: fira;
-    font-size: 2vw;
-    color: whitesmoke;
-    text-shadow: 0 0 1vw whitesmoke;
+#header{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    padding-top: 0;
+    margin-top: 0;
+    /* background-color: red; */
 }
-hr{
-    width: 75%;
-    box-shadow: 0 0 1vw whitesmoke;
-    height: 1vw;
-    background-color: whitesmoke
+#topTabs{
+    flex: 1;
+    text-align:center;
+    /* background-color: green; */
+    width: 30vw;
 }
-@keyframes flicker{
-	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
-    text-shadow: 0 0 3vw whitesmoke;
+#hide{
+    font-family: monoton;
+    font-size: 7vh;
+    font-weight: 300;
+    text-align:right;
+    margin:0;
+    padding: 1vw;
+    margin-bottom: 0;
+    animation: titleFlicker 3s linear infinite;
+    visibility: hidden;
+}
+@keyframes titleFlicker {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+	text-shadow: 0 0 3vh whitesmoke;
     opacity: .99;
 		
 	}
 	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
-    text-shadow: none;
-	opacity: 0.4;
-	}
+		opacity: 0.4;
+    }
 }
-.slow{
-    animation: flicker 3s linear infinite;
-}
-.fast{
-    animation: flicker 1s linear infinite;
+h1{
+    color: whitesmoke;
+    font-family: fira;
+    text-shadow: 0 0 3vw whitesmoke;
 }
