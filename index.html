@@ -9,15 +9,21 @@
   </head>
   <body>
     <div id = "header">
-        <h2 id = "toplink">pukhi.ca</h2>
+        <h2 id = "toplink"><span class = "fast">p</span><span class = "slowest">u</span><span class = "fastest">k</span><span class = "slowest">h</span><span class = "fastest">i.</span><span class = "slowest">c</span><span class = "fast">a</span></h2>
         <div id = "topTabs">
-            <h2>Balls</h2>
+            <button class = "sitetab" onclick = "openPage('homePage')" id = "home">Home</button>
+            <button class = "sitetab" onclick = "openPage('aboutPage')" id = "about">About Me</button>
+            <button class = "sitetab" onclick = "openPage('cvPage')" id = "cv">Curriculum Vitae</button>
+            <button class = "sitetab" onclick = "openPage('gdPage')" id = "gd">Game Development</button>
+            <button class = "sitetab" onclick = "openPage('contactPage')" id = "contact">Contact</button>
         </div>
         <h2 id = "hide">pukhi.ca</h2>
     </div>
-    <!-- <h1 id = "animation-test"><span class = "slow">pu</span><span class = "fast">k</span><span class = "slow">hi.</span><span class = "fast">ca</span></h1>
-    <hr>
-    <h2>This site is currently undergoing major changes, please come back soon for a refreshed page!</h2> -->
+    <div class = "tabcontent" id = "homePage"><h1>home</h1></div>
+    <div class = "tabcontent" id = "aboutPage"><h1>about</h1></div>
+    <div class = "tabcontent" id = "cvPage"><h1>cv</h1></div>
+    <div class = "tabcontent" id = "gdPage"><h1>gd</h1></div>
+    <div class = "tabcontent" id = "contactPage"><h1>contact</h1></div>
     <h1>This site is in the progress of being rebuilt. ETA Jan 30.</h1>
   </body>
   <script src = "script.js"></script>

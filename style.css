@@ -26,6 +26,10 @@
     font-family: monoton;
     src:url("fonts/Monoton-Regular.ttf");
 }
+@font-face{
+    font-family: playfair;
+    src:url("fonts/PlayfairDisplay-VariableFont_wght.ttf")
+}
  /* Scrollbar */
  ::-webkit-scrollbar {
     width: 12px;
@@ -42,7 +46,7 @@
 }
 body{
   overflow-x:hidden;
-  background-color:#0f0024;
+  background-color:#01000c;
   margin: 0px;
   padding: 0px;
 }
@@ -53,16 +57,15 @@ a{
   cursor:pointer;
 }
 #toplink{
-    font-family: monoton;
+    font-family: tiltneon;
     color: whitesmoke;
-    font-size: 7vh;
+    font-size: 4vh;
     font-weight: 300;
     text-align:left;
     margin:0;
     padding: 1vw;
     margin-bottom: 0;
     animation: titleFlicker 3s linear infinite;
-    /* align-self:center; */
 }
 #header{
     display: flex;
@@ -74,29 +77,151 @@ a{
     /* background-color: red; */
 }
 #topTabs{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    color: whitesmoke;
     flex: 1;
-    text-align:center;
     /* background-color: green; */
-    width: 30vw;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
 }
 #hide{
-    font-family: monoton;
-    font-size: 7vh;
+    font-family: tiltneon;
+    font-size: 4vh;
     font-weight: 300;
     text-align:right;
     margin:0;
     padding: 1vw;
     margin-bottom: 0;
-    animation: titleFlicker 3s linear infinite;
     visibility: hidden;
+}
+.slowest{
+    animation: titleFlicker 5s linear infinite;
+}
+.fast{
+    animation: titleFlicker 3s linear infinite;
+}
+.fastest{
+    animation: titleFlicker 1s linear infinite;
+}
+.sitetab{
+    padding: 1vw;
+    font-size:3vh;
+    float:left;
+    background-color: rgba(0, 0, 0, 0);
+    color: whitesmoke;
+    border:none;
+    font-family: tiltneon;
+}
+#home{
+    color: #ff6c11;
+    opacity: 0.5;
+    transition-duration: 0.2s;
+    animation-delay: 0.2s;
+}
+#home:hover{
+    opacity: 0.99;
+    animation: homeFlicker 3.5s linear infinite;
+}
+#about{
+    color: #ff3864;
+    opacity: 0.5;
+    transition-duration: 0.2s;
+    animation-delay: 0.2s;
+}
+#about:hover{
+    opacity: 0.99;
+    animation: aboutFlicker 4.2s linear infinite;
+}
+#cv{
+    color: #d40078;
+    opacity: 0.5;
+    transition-duration: 0.2s;
+    animation-delay: 0.2s;
+}
+#cv:hover{
+    opacity: 0.99;
+    animation: cvFlicker 3.9s linear infinite;
+}
+#gd{
+    color: #920075;
+    opacity: 0.5;
+    transition-duration: 0.2s;
+    animation-delay: 0.2s;
+}
+#gd:hover{
+    opacity: 0.99;
+    animation: gdFlicker 4s linear infinite;
+}
+#contact{
+    color: #375971ff;
+    opacity: 0.5;
+    transition-duration: 0.2s;
+    animation-delay: 0.2s;
+}
+#contact:hover{
+    opacity: 0.99;
+    animation: contactFlicker 3.3s linear infinite;
 }
 @keyframes titleFlicker {
     0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
-	text-shadow: 0 0 3vh whitesmoke;
+	text-shadow: 0 0 5vh whitesmoke;
     opacity: .99;
 		
 	}
 	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+    }
+}
+@keyframes homeFlicker {
+    0%, 1.99%, 4%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+	text-shadow: 0 0 5vh #ff6c11;
+    opacity: .99;
+		
+	}
+	2%, 3.99%, 20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+    }
+}
+@keyframes aboutFlicker {
+    0%, 1.99%, 4%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+	text-shadow: 0 0 5vh #ff3864;
+    opacity: .99;
+		
+	}
+	2%, 3.99%, 20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+    }
+}
+@keyframes cvFlicker {
+    0%, 1.99%, 4%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+	text-shadow: 0 0 5vh #d40078;
+    opacity: .99;
+		
+	}
+	2%, 3.99%, 20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+    }
+}
+@keyframes gdFlicker {
+    0%, 1.99%, 4%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+	text-shadow: 0 0 5vh #920075;
+    opacity: .99;
+		
+	}
+	2%, 3.99%, 20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+    }
+}
+@keyframes contactFlicker {
+    0%, 1.99%, 4%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+	text-shadow: 0 0 5vh #375971ff;
+    opacity: .99;
+		
+	}
+	2%, 3%, 20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
 		opacity: 0.4;
     }
 }
