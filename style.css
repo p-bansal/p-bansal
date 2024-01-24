@@ -41,12 +41,12 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #0f0024;  
+    background: #01000c;  
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #170038;
+    background: #0f0033;
 }
 body{
   overflow-x:hidden;
@@ -322,7 +322,6 @@ a{
     animation: titleFlicker 35s linear infinite;
 }
 #aboutDiv{
-    height: 80vh;
     width: 90vw;
     display: flex;
     flex-direction: column;
@@ -335,11 +334,18 @@ a{
     font-size: 25vh;
     padding-top:1vw;
     margin:0;
-    animation: contactFlicker 3.5s linear infinite;
+    animation: aboutFlicker 3.5s linear infinite;
     justify-self: flex-start;
-    align-self: flex-start;
 }
 #aboutBody{
     font-family: tiltwarp;
     font-size: 10vh;
+}
+#linkedin:link, #linkedin:visited{
+    color:whitesmoke;
+    opacity:0.7;
+}
+#linkedin:hover{
+    opacity:0.99;
+    text-shadow: 0 0 3vh whitesmoke;
 }
