@@ -356,6 +356,15 @@ a{
     align-content: space-between;
     justify-content: center;
 }
+dl{
+    color: whitesmoke;
+    font-family: tiltwarp;
+    font-size: 3vh;
+    padding: 5px;
+}
+dd{
+    padding: 5px;
+}
 #cvHeader{
     color: #d40078;
     font-family:tiltneon;
@@ -379,5 +388,14 @@ a{
     padding-top:1vw;
     margin:0;
     animation: gdFlicker 3.5s linear infinite;
+    justify-self: flex-start;
+}
+h3{
+    color:#d40078;
+    font-family: tiltneon;
+    font-size: 5vh;
+    padding-top: 1vw;
+    margin:0;
+    animation: cvFlicker 3.23423s linear infinite;
     justify-self: flex-start;
 }
