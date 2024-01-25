@@ -228,7 +228,7 @@ a{
 @keyframes homeFlicker {
     0%, 1.99%, 4%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
 	text-shadow: 0 0 5vh #ff6c11;
-    opacity: .99
+    opacity: .99;
 		
 	}
 	2%, 3.99%, 20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
@@ -292,7 +292,6 @@ a{
     animation: titleFlicker 30s linear infinite
 }
 #contactDiv{
-    height: 80vh;
     width: 90vw;
     display: flex;
     flex-direction: column;
@@ -340,6 +339,7 @@ a{
 #aboutBody{
     font-family: tiltwarp;
     font-size: 10vh;
+    color: whitesmoke;
 }
 #linkedin:link, #linkedin:visited{
     color:whitesmoke;
@@ -348,4 +348,36 @@ a{
 #linkedin:hover{
     opacity:0.99;
     text-shadow: 0 0 3vh whitesmoke;
+}
+#cvDiv{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+}
+#cvHeader{
+    color: #d40078;
+    font-family:tiltneon;
+    font-size: 25vh;
+    padding-top: 1vw;
+    margin:0;
+    animation: cvFlicker 3.5s linear infinite;
+    justify-self: flex-start;
+}
+#gdDiv{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+}
+#gdHeader{
+    color:#920075;
+    font-family: tiltneon;
+    font-size: 25vh;
+    padding-top:1vw;
+    margin:0;
+    animation: gdFlicker 3.5s linear infinite;
+    justify-self: flex-start;
 }
