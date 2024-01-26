@@ -8,4 +8,8 @@ function openPage(name){
     document.getElementById(name).style.display = "flex";
 }
 
+function openNewTab(url){
+    window.open(url, "_blank");
+}
+
 document.getElementById("home").click();

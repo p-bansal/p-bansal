@@ -403,6 +403,9 @@ dd{
     animation: gdFlicker 3.5s linear infinite;
     justify-self: flex-start;
 }
+#gdBoby{
+    align-content: space-around;
+}
 h3{
     color:#d40078;
     font-family: tiltneon;
@@ -412,9 +415,19 @@ h3{
     animation: cvFlicker 3.23423s linear infinite;
     justify-self: flex-start;
 }
+h4{
+    color: #920075;
+    font-family: tiltneon;
+    font-size: 5vh;
+    padding-top:1vw;
+    margin:0;
+    animation: gdFlicker 3.23498290834s linear infinite;
+    justify-self: flex-start;
+}
 .opposite{
     text-align: right;
     justify-self: right;
+    align-content: flex-end;
 }
 dd{
     font-size:2.5vh;
@@ -424,4 +437,22 @@ dt{
 }
 .nounderline{
     text-decoration: none;
+}
+.gameLink{
+    cursor: pointer;
+    padding: 2vh;
+    display: flex;
+    justify-self: center;
+
+}
+.gameLink:hover{
+    background-color:#050223;
+}
+p{
+    font-family: lexend;
+    color: whitesmoke;
+    font-size: 3vh;
+}
+#gameDescription{
+    display: inline;
 }
