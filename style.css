@@ -369,6 +369,7 @@ dl{
     font-family: lexend;
     font-size: 3vh;
     padding: 5px;
+    /* width: 70vw; */
 }
 dd{
     padding: 5px;
@@ -381,6 +382,10 @@ dd{
     margin:0;
     animation: cvFlicker 3.5s linear infinite;
     justify-self: flex-start;
+}
+#cvBody{
+    /* width: 70vw; */
+    justify-self: left;
 }
 #gdDiv{
     width: 90vw;
@@ -406,4 +411,17 @@ h3{
     margin:0;
     animation: cvFlicker 3.23423s linear infinite;
     justify-self: flex-start;
+}
+.opposite{
+    text-align: right;
+    justify-self: right;
+}
+dd{
+    font-size:2.5vh;
+}
+dt{
+    text-decoration: underline;
+}
+.nounderline{
+    text-decoration: none;
 }
