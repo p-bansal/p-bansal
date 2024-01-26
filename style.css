@@ -448,11 +448,11 @@ dt{
 .gameLink:hover{
     background-color:#050223;
 }
-p{
+.description{
     font-family: lexend;
     color: whitesmoke;
     font-size: 3vh;
 }
-#gameDescription{
+.gameDescription{
     display: inline;
 }
