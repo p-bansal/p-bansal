@@ -31,7 +31,7 @@ body{
 }
 #homeLink{
   color:white;
-  font-family:tiltneon;
+  font-family:fira, monospace;
   font-size:3vw;
   color:white;
   transition: opacity 200ms;
