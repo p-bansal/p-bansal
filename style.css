@@ -34,6 +34,14 @@
     font-family: tiltwarp;
     src:url("fonts/TiltWarp-Regular-VariableFont.ttf")
 }
+@font-face {
+    font-family: nunito;
+    src: url("fonts/Nunito-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: lexend;
+    src: url("fonts/LexendDeca-VariableFont_wght.ttf");
+}
  /* Scrollbar */
  ::-webkit-scrollbar {
     width: 12px;
@@ -201,7 +209,7 @@ a{
     padding-top: 1vw;
 }
 #homeBody{
-    font-family: tiltwarp;
+    font-family: lexend;
     color: whitesmoke;
     font-size: 4vh;
     padding-left: 2vw;
@@ -308,7 +316,7 @@ a{
     justify-self: flex-start;
 }
 #contactInfo{
-    font-family: tiltwarp;
+    font-family: tiltneon;
     font-size: 10vh;
     text-align: left;
 }
@@ -337,7 +345,7 @@ a{
     justify-self: flex-start;
 }
 #aboutBody{
-    font-family: tiltwarp;
+    font-family: lexend;
     font-size: 10vh;
     color: whitesmoke;
 }
@@ -358,7 +366,7 @@ a{
 }
 dl{
     color: whitesmoke;
-    font-family: tiltwarp;
+    font-family: lexend;
     font-size: 3vh;
     padding: 5px;
 }
