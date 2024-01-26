@@ -184,15 +184,15 @@ a{
     animation: contactFlicker 3.3s linear infinite;
 }
 #homeMain{
-    background-image: url("images/HomeWallpaper.jpg");
-    background-color: darkslategrey;
+    /* background-image: url("images/HomeWallpaper.jpg"); */
+    /* background-color: darkslategrey; */
     background-repeat:no-repeat;
     background-size: cover;
     height: 80vh;
     width: 90vw;
-    border: 0.2vw solid whitesmoke;
+    /* border: 0.2vw solid whitesmoke; */
     border-radius: 0.25vw;
-    box-shadow: 0 0 1.5vh whitesmoke;
+    /* box-shadow: 0 0 1.5vh whitesmoke; */
     display: flex;
     flex-direction: column;
     align-content: space-between;
@@ -217,8 +217,8 @@ a{
     padding-top:2vh;
     padding-right: 2vw;
     margin-bottom:0;
-    align-self: flex-end;
-    margin-top: auto;
+    /* align-self: flex-end; */
+    /* margin-top: auto; */
     background-color: rgba(0, 0, 0, 0.5);
     background-clip:border-box
 }
