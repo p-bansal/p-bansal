@@ -219,7 +219,7 @@ a{
     margin-bottom:0;
     /* align-self: flex-end; */
     /* margin-top: auto; */
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
     background-clip:border-box
 }
 @keyframes titleFlicker {
