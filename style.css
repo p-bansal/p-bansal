@@ -141,7 +141,7 @@ a{
 }
 #home:hover{
     opacity: 0.99;
-    animation: homeFlicker 3.5s linear infinite;
+    animation: homeFlicker 6.5s linear infinite;
 }
 #about{
     color: #ff3864;
@@ -151,7 +151,7 @@ a{
 }
 #about:hover{
     opacity: 0.99;
-    animation: aboutFlicker 4.2s linear infinite;
+    animation: aboutFlicker 7.2s linear infinite;
 }
 #cv{
     color: #d40078;
@@ -161,7 +161,7 @@ a{
 }
 #cv:hover{
     opacity: 0.99;
-    animation: cvFlicker 3.9s linear infinite;
+    animation: cvFlicker 6.9s linear infinite;
 }
 #gd{
     color: #920075;
@@ -171,7 +171,7 @@ a{
 }
 #gd:hover{
     opacity: 0.99;
-    animation: gdFlicker 4s linear infinite;
+    animation: gdFlicker 7s linear infinite;
 }
 #contact{
     color: #375971ff;
@@ -181,7 +181,7 @@ a{
 }
 #contact:hover{
     opacity: 0.99;
-    animation: contactFlicker 3.3s linear infinite;
+    animation: contactFlicker 6.3s linear infinite;
 }
 #homeMain{
     /* background-image: url("images/HomeWallpaper.jpg"); */
@@ -202,7 +202,7 @@ a{
     font-family: tiltneon;
     color: #ff6c11;
     font-size: 25vh;
-    animation: homeFlicker 3.34s linear infinite;
+    animation: homeFlicker 6.34s linear infinite;
     padding:0 0 0 0;
     margin:0 0 0 0;
     padding-left: 2vw;
@@ -312,7 +312,7 @@ a{
     font-size: 25vh;
     padding-top:1vw;
     margin:0;
-    animation: contactFlicker 3.5s linear infinite;
+    animation: contactFlicker 6.5s linear infinite;
     justify-self: flex-start;
 }
 #contactInfo{
@@ -321,7 +321,7 @@ a{
     text-align: left;
 }
 .symbolflicker{
-    animation: titleFlicker 3.675s linear infinite;
+    animation: titleFlicker 6.675s linear infinite;
     color: whitesmoke;
 }
 .contactFlicker{
@@ -341,7 +341,7 @@ a{
     font-size: 25vh;
     padding-top:1vw;
     margin:0;
-    animation: aboutFlicker 3.5s linear infinite;
+    animation: aboutFlicker 6.5s linear infinite;
     justify-self: flex-start;
 }
 #aboutBody{
@@ -380,7 +380,7 @@ dd{
     font-size: 25vh;
     padding-top: 1vw;
     margin:0;
-    animation: cvFlicker 3.5s linear infinite;
+    animation: cvFlicker 6.5s linear infinite;
     justify-self: flex-start;
 }
 #cvBody{
@@ -400,7 +400,7 @@ dd{
     font-size: 25vh;
     padding-top:1vw;
     margin:0;
-    animation: gdFlicker 3.5s linear infinite;
+    animation: gdFlicker 6.5s linear infinite;
     justify-self: flex-start;
 }
 #gdBoby{
@@ -412,7 +412,7 @@ h3{
     font-size: 5vh;
     padding-top: 1vw;
     margin:0;
-    animation: cvFlicker 3.23423s linear infinite;
+    animation: cvFlicker 6.23423s linear infinite;
     justify-self: flex-start;
 }
 h4{
@@ -421,7 +421,7 @@ h4{
     font-size: 5vh;
     padding-top:1vw;
     margin:0;
-    animation: gdFlicker 3.23498290834s linear infinite;
+    animation: gdFlicker 6.23498290834s linear infinite;
     justify-self: flex-start;
 }
 .opposite{
