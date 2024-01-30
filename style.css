@@ -403,9 +403,6 @@ dd{
     animation: gdFlicker 10.5s linear infinite;
     justify-self: flex-start;
 }
-#gdBoby{
-    align-content: space-around;
-}
 h3{
     color:#d40078;
     font-family: tiltneon;
@@ -455,4 +452,17 @@ dt{
 }
 .gameDescription{
     display: inline;
+}
+.mePics{
+    object-fit: scale-down;
+    padding:0;
+    margin:0;
+    justify-self: right;
+}
+#aboutBody{
+    font-size: 3vh;
+}
+#pics{
+    justify-self: center;
+    width: 75vw;
 }
