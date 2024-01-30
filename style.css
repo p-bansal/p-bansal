@@ -465,4 +465,6 @@ dt{
 #pics{
     justify-self: center;
     width: 75vw;
+    margin: auto;
+    display: block;
 }
